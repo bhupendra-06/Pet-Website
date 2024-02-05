@@ -1,13 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;800&family=Concert+One&family=Single+Day&display=swap");
+/* 
+font-family: 'Archivo', sans-serif;
+font-family: 'Concert One', sans-serif;
+font-family: 'Single Day', cursive;
+*/
+
+/* CUSTOM Tailwind CSS */
+.gradient-background {
+  background: linear-gradient(0deg,#ff6237 0%,#ffa992 100%);
+
+}
+.hover-gradient-background:hover {
+  background: linear-gradient(0deg,#ff6237 0%,#ffa992 100%);
+}
+/* FOR changing the color of h2 and p tag when hover the card */
+.hover-gradient-background:hover h2, .hover-gradient-background:hover p {
+  color: white;
+}
+.custom-font {
+  font-family: Concert One;
+}
+.custom-shadow-red {
+  box-shadow: 0px 10px 15px 0px rgba(255, 124, 84, 0.3);
+}
+.custom-green-btn {
+  background: linear-gradient(180deg, #c3e48f 0%, #8ec637 65%);
+  box-shadow: 0px 10px 25px 0px rgba(125, 181, 35, 0.3);
+}
+
+.custom-dog-background {
+  background-image: url("./assets/dog-background.png"); /* Replace with the actual path to your image */
+  background-size: contain;
+  background-position: center;
+  /* Can add more styles as needed */
 }
