@@ -1,8 +1,32 @@
 import React from "react";
+import GroomerCard from "./GroomerCard";
 import g1 from "../assets/G1.png";
 import g2 from "../assets/G2.png";
 import g3 from "../assets/G3.png";
 import g4 from "../assets/G4.png";
+
+const cards = [
+  {
+    name: "Bhupendra",
+    role: "CEO & Founder",
+    img: g1,
+  },
+  {
+    name: "Rosalina Wiliam",
+    role: "CEO & Founder",
+    img: g2,
+  },
+  {
+    name: "Bhupendra",
+    role: "Frontend Developer",
+    img: g3,
+  },
+  {
+    name: "Bhupendra",
+    role: "Backend Developer",
+    img: g4,
+  },
+];
 
 const Groomers = () => {
   return (
@@ -16,67 +40,9 @@ const Groomers = () => {
         </h2>
         {/* Card Section Starts Here */}
         <div className="my-10 flex flex-wrap justify-center overflow-x-auto gap-2 gap-y-5 gap-x-10">
-          {/* Single Card */}
-          <div className="w-56 h-80 shadow-gray-400 mb-5 shadow-lg text-center p-2 bg-white hover:bg-green-300 duration-300 rounded-full">
-            <div className="w-40 h-40 rounded-full mt-7 mx-auto">
-              <img
-                className="w-full h-full object-contain"
-                src={g1}
-                alt="service-icon"
-              />
-            </div>
-            <h2 className="mt-5 text-2xl text-indigo-950 font-bold">Rosalina Wiliam</h2>
-            <p className="my-1 text-base text-orange-500 font-semibold">
-            CEO & Founder
-            </p>
-          </div>
-          {/* Single Card End */}
-          {/* Single Card */}
-          <div className="w-56 h-80 shadow-gray-400 mb-5 shadow-lg text-center p-2 bg-white hover:bg-green-300 duration-300 rounded-full">
-            <div className="w-40 h-40 rounded-full mt-7 mx-auto">
-              <img
-                className="w-full h-full object-contain"
-                src={g2}
-                alt="service-icon"
-              />
-            </div>
-            <h2 className="mt-5 text-2xl text-indigo-950 font-bold">Rosalina Wiliam</h2>
-            <p className="my-1 text-base text-orange-500 font-semibold">
-            CEO & Founder
-            </p>
-          </div>
-          {/* Single Card End */}
-          {/* Single Card */}
-          <div className="w-56 h-80 shadow-gray-400 mb-5 shadow-lg text-center p-2 bg-white hover:bg-green-300 duration-300 rounded-full">
-            <div className="w-40 h-40 rounded-full mt-7 mx-auto">
-              <img
-                className="w-full h-full object-contain"
-                src={g3}
-                alt="service-icon"
-              />
-            </div>
-            <h2 className="mt-5 text-2xl text-indigo-950 font-bold">Rosalina Wiliam</h2>
-            <p className="my-1 text-base text-orange-500 font-semibold">
-            CEO & Founder
-            </p>
-          </div>
-          {/* Single Card End */}
-          {/* Single Card */}
-          <div className="w-56 h-80 shadow-gray-400 mb-5 shadow-lg text-center p-2 bg-white hover:bg-green-300 duration-300 rounded-full">
-            <div className="w-40 h-40 rounded-full mt-7 mx-auto">
-              <img
-                className="w-full h-full object-contain"
-                src={g4}
-                alt="service-icon"
-              />
-            </div>
-            <h2 className="mt-5 text-2xl text-indigo-950 font-bold">Rosalina Wiliam</h2>
-            <p className="my-1 text-base text-orange-500 font-semibold">
-            CEO & Founder
-            </p>
-          </div>
-          {/* Single Card End */}
+          <GroomerCard props={cards} />
         </div>
+        {/* End of Card Section */}
       </div>
     </div>
   );

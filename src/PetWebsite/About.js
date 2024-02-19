@@ -5,7 +5,7 @@ import feetIcon from "../assets/feet-icon.png";
 const About = () => {
   return (
     <>
-      <div className=" w-full min-h-screen p-[5%] md:py-4 sm:p-14 md:flex md:items-center md:justify-around lg:py-2">
+      <div className="w-full min-h-screen p-[5%] md:py-4 sm:p-14 md:flex md:items-center md:justify-around lg:py-2">
         <div className="w-full mx-auto sm:w-[560px] md:m-0 md:w-[400px] lg:w-[600px] lg:mr-10">
           <h4 className="text-start text-base md:text-xl text-orange-500 font-bold">
             Our Success Story{" "}
