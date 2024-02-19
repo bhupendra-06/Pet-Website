@@ -1,3 +1,6 @@
+## Preview of website
+![image](https://github.com/bhupendra-06/Pet-Website/assets/157221505/f7c1e7c3-83a9-4b67-8e30-967b7c281ab3)
+
 ## Available Scripts
 
 In the project directory, you can run:
